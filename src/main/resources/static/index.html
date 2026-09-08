@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VNPT SDK proxy PoC</title>
+  <script defer src="/vnpt-sdk/web-sdk-version-3.2.1.0.js"></script>
+  <script defer src="/vnpt-sdk/lib/VNPTQRBrowserApp.js"></script>
+  <script defer src="/vnpt-sdk/lib/VNPTBrowserSDKAppV4.1.0.js"></script>
+  <script defer src="/poc-config.js"></script>
+  <script defer src="/poc.js"></script>
+</head>
+<body>
+  <h1>VNPT Web SDK → backend → VNPT</h1>
+  <p id="notice" role="status">Đang kiểm tra SDK…</p>
+  <label>Credential browser:
+    <select id="credentials"><option value="">Empty (thử trước)</option><option value="dummy">Dummy (nếu SDK từ chối empty)</option></select>
+  </label>
+  <button id="start" disabled>Bắt đầu eKYC</button>
+  <p>Reload trang trước mỗi lần thử. Callback chỉ báo SDK hoàn thành, không xác nhận danh tính.</p>
+  <div id="ekyc_sdk_intergrated"></div>
+</body>
+</html>

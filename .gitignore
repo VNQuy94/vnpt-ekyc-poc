@@ -1,0 +1,12 @@
+.gradle/
+build/
+
+# These files are supplied by VNPT. Do not commit vendor SDK assets or credentials.
+src/main/resources/static/vendor/*.js
+src/main/resources/static/vendor/*.css
+!src/main/resources/static/vendor/.gitkeep
+.env
+src/main/resources/static/vnpt-sdk/
+src/main/resources/static/*.png
+src/main/resources/static/*.jpg
+src/main/resources/static/*.css

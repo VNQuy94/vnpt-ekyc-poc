@@ -1,0 +1,10 @@
+server:
+  port: 8080
+
+vnpt:
+  # Override only through VNPT_BASE_URL; never put credentials in this file.
+  base-url: ${VNPT_BASE_URL:https://api.idg.vnpt.vn}
+
+logging:
+  level:
+    vnpt.poc.proxy: INFO
